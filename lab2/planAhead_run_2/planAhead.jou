@@ -1,0 +1,53 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Sun Oct 02 21:05:58 2016
+# Process ID: 5872
+# Log file: C:/xilinx/demo/planAhead_run_2/planAhead.log
+# Journal file: C:/xilinx/demo/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/xilinx/demo/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+set_property iostandard LVCMOS25 [get_ports [list clk]]
+set_property iostandard LVCMOS25 [get_ports [list {led[7]} {led[6]} {led[5]} {led[4]} {led[3]} {led[2]} {led[1]} {led[0]}]]
+startgroup
+set_property package_pin H13 [get_ports clk]
+endgroup
+set_property is_loc_fixed false [get_ports [list  clk]]
+set_property is_loc_fixed true [get_ports [list  clk]]
+set_property is_loc_fixed false [get_ports [list  clk]]
+set_property is_loc_fixed true [get_ports [list  clk]]
+set_property iostandard LVTTL [get_ports [list clk]]
+set_property package_pin "" [get_ports [list  east]]
+startgroup
+set_property package_pin D18 [get_ports east]
+endgroup
+set_property is_loc_fixed false [get_ports [list  east]]
+set_property iostandard LVCMOS33 [get_ports [list clk]]
+set_property iostandard LVCMOS25 [get_ports [list east]]
+set_property is_loc_fixed true [get_ports [list  east]]
+startgroup
+set_property package_pin C9 [get_ports clk]
+endgroup
+set_property package_pin "" [get_ports [list  reset]]
+startgroup
+set_property package_pin H13 [get_ports east]
+endgroup
+set_property iostandard LVTTL [get_ports [list east]]
+startgroup
+set_property package_pin K17 [get_ports reset]
+endgroup
+set_property is_loc_fixed false [get_ports [list  reset]]
+set_property is_loc_fixed true [get_ports [list  reset]]
+set_property iostandard LVTTL [get_ports [list reset]]
+startgroup
+set_property package_pin D18 [get_ports west]
+endgroup
+set_property is_loc_fixed false [get_ports [list  west]]
+set_property is_loc_fixed true [get_ports [list  west]]
+set_property iostandard LVTTL [get_ports [list west]]
+set_property pulltype PULLDOWN [get_ports [list east]]
+set_property pulltype PULLDOWN [get_ports [list reset]]
+set_property pulltype PULLDOWN [get_ports [list west]]
+save_constraints

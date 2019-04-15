@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="248" delta="unknown" >"C:/xilinx/DEMO/MULT.v" Line 77: Block identifier is required on this block
+</msg>
+
+<msg type="error" file="HDLCompiler" num="44" delta="unknown" >"C:/xilinx/DEMO/MULT.v" Line 31: <arg fmt="%s" index="1">A</arg> is not a constant
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="329" delta="unknown" >"C:/xilinx/DEMO/MULT.v" Line 32: Target &lt;<arg fmt="%s" index="1">neg</arg>&gt; of concurrent assignment or output port connection should be a net type.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="329" delta="unknown" >"C:/xilinx/DEMO/MULT.v" Line 35: Target &lt;<arg fmt="%s" index="1">neg</arg>&gt; of concurrent assignment or output port connection should be a net type.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="44" delta="unknown" >"C:/xilinx/DEMO/MULT.v" Line 73: <arg fmt="%s" index="1">neg</arg> is not a constant
+</msg>
+
+<msg type="error" file="HDLCompiler" num="46" delta="unknown" >"C:/xilinx/DEMO/MULT.v" Line 76: <arg fmt="%s" index="1">i</arg> is not a genvar
+</msg>
+
+<msg type="error" file="HDLCompiler" num="44" delta="unknown" >"C:/xilinx/DEMO/MULT.v" Line 76: <arg fmt="%s" index="1">i</arg> is not a constant
+</msg>
+
+<msg type="error" file="HDLCompiler" num="598" delta="unknown" >"C:/xilinx/DEMO/MULT.v" Line 21: Module &lt;<arg fmt="%s" index="1">MULT</arg>&gt; ignored due to previous errors.
+</msg>
+
+</messages>
+

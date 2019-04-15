@@ -1,0 +1,11 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Mon Oct 03 16:36:10 2016
+# Process ID: 3396
+# Log file: D:/demo/planAhead_run_1/planAhead.log
+# Journal file: D:/demo/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/demo/pa.fromHdl.tcl
+update_compile_order -fileset sim_1

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Mon Oct 03 16:54:36 2016
+# Process ID: 4108
+# Log file: D:/demo/planAhead_run_4/planAhead.log
+# Journal file: D:/demo/planAhead_run_4/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/demo/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+set_property iostandard LVTTL [get_ports [list {led[7]} {led[6]} {led[5]} {led[4]} {led[3]} {led[2]} {led[1]} {led[0]}]]
+set_property drive 8 [get_ports [list {led[7]} {led[6]} {led[5]} {led[4]} {led[3]} {led[2]} {led[1]} {led[0]}]]
+save_constraints

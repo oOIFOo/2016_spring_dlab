@@ -1,0 +1,109 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Sun Oct 02 21:05:58 2016
+# Process ID: 5872
+# Log file: C:/xilinx/demo/planAhead_run_2/planAhead.log
+# Journal file: C:/xilinx/demo/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+WARNING: [Common 17-301] Failed to get a license: PlanAhead
+INFO: [Device 21-36] Loading parts and site information from D:/XLINX/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [D:/XLINX/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [D:/XLINX/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+WARNING: [Common 17-301] Failed to get a license: PlanAhead
+source C:/xilinx/demo/pa.fromHdl.tcl
+# create_project -name demo -dir "C:/xilinx/demo/planAhead_run_3" -part xc3s500efg320-4
+create_project: Time (s): elapsed = 00:00:08 . Memory (MB): peak = 414.902 ; gain = 58.844
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "counter.ucf" [current_fileset -constrset]
+Adding file 'C:/xilinx/demo/counter.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {counter.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set_property top counter $srcset
+# add_files [list {counter.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc3s500efg320-4
+Using Verific elaboration
+Parsing VHDL file "D:/XLINX/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Analyzing Verilog file "C:/xilinx/demo/counter.v" into library work
+INFO: [Designutils 20-910] Reading macro library D:/XLINX/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn
+Parsing EDIF File [D:/XLINX/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Finished Parsing EDIF File [D:/XLINX/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Loading clock regions from D:/XLINX/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/ClockRegion.xml
+Loading clock buffers from D:/XLINX/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/ClockBuffers.xml
+Loading package from D:/XLINX/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/fg320/Package.xml
+Loading io standards from D:/XLINX/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/IOStandards.xml
+INFO: [Device 21-19] Loading pkg sso from D:/XLINX/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/fg320/SSORules.xml
+Loading list of drcs for the architecture : D:/XLINX/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/drc.xml
+INFO: [Timing 38-77] Reading timing library D:/XLINX/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+INFO: [Timing 38-34] Done reading timing library D:/XLINX/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+Parsing UCF File [C:/xilinx/demo/counter.ucf]
+Finished Parsing UCF File [C:/xilinx/demo/counter.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 2dc6efeb
+open_rtl_design: Time (s): elapsed = 00:00:13 . Memory (MB): peak = 558.879 ; gain = 136.793
+update_compile_order -fileset sim_1
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+WARNING: [Common 17-301] Failed to get a license: PlanAhead
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+WARNING: [Common 17-301] Failed to get a license: PlanAhead
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+set_property iostandard LVCMOS25 [get_ports [list clk]]
+set_property iostandard LVCMOS25 [get_ports [list {led[7]} {led[6]} {led[5]} {led[4]} {led[3]} {led[2]} {led[1]} {led[0]}]]
+startgroup
+set_property package_pin H13 [get_ports clk]
+endgroup
+set_property is_loc_fixed false [get_ports [list  clk]]
+set_property is_loc_fixed true [get_ports [list  clk]]
+set_property is_loc_fixed false [get_ports [list  clk]]
+set_property is_loc_fixed true [get_ports [list  clk]]
+set_property iostandard LVTTL [get_ports [list clk]]
+set_property package_pin "" [get_ports [list  east]]
+startgroup
+set_property package_pin D18 [get_ports east]
+endgroup
+set_property is_loc_fixed false [get_ports [list  east]]
+set_property iostandard LVCMOS33 [get_ports [list clk]]
+set_property iostandard LVCMOS25 [get_ports [list east]]
+set_property is_loc_fixed true [get_ports [list  east]]
+startgroup
+set_property package_pin C9 [get_ports clk]
+endgroup
+set_property package_pin "" [get_ports [list  reset]]
+startgroup
+set_property package_pin H13 [get_ports east]
+endgroup
+set_property iostandard LVTTL [get_ports [list east]]
+startgroup
+set_property package_pin K17 [get_ports reset]
+endgroup
+set_property is_loc_fixed false [get_ports [list  reset]]
+set_property is_loc_fixed true [get_ports [list  reset]]
+set_property iostandard LVTTL [get_ports [list reset]]
+startgroup
+set_property package_pin D18 [get_ports west]
+endgroup
+set_property is_loc_fixed false [get_ports [list  west]]
+set_property is_loc_fixed true [get_ports [list  west]]
+set_property iostandard LVTTL [get_ports [list west]]
+set_property pulltype PULLDOWN [get_ports [list east]]
+set_property pulltype PULLDOWN [get_ports [list reset]]
+set_property pulltype PULLDOWN [get_ports [list west]]
+save_constraints
+exit
+ERROR: [PlanAhead 12-106] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+ (See C:/xilinx/demo\planAhead_pid5872.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Sun Oct 02 21:27:46 2016...
+INFO: [Common 17-83] Releasing license: PlanAhead
